@@ -89,7 +89,7 @@ public class MoviePage {
     }
 
     public String getMovieDetailTitle() {
-        WebElement titleEl = new WebDriverWait(driver, Duration.ofSeconds(10))
+        WebElement titleEl = new WebDriverWait(driver, Duration.ofSeconds(20))
                 .until(ExpectedConditions.visibilityOfElementLocated(movieDetailTitle));
         return titleEl.getText().trim();
     }
